@@ -1,15 +1,39 @@
-#navBar {
-	 color: white
-	 font-family: 'Yellowtail', cursive;
+#navBar  {
+	color: hotpink;
+	border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+	font-family: 'Raleway', sans-serif;
 	}
+
+#navBar > li > a:link {
+	color:#e67300;
+	font-family: 'Raleway', sans-serif;
+}
+
+#navBar > li > a:hover {
+	color: hotpink;
+	font-family: 'Raleway', sans-serif;
+}
+
+#navBar > li > a:visited {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+#navBar > li > a:active {
+	color: #ff704d;
+	font-family: 'Raleway', sans-serif;
+}
 
 #pageTitle {
 	color: white;
-	text-size: 90%;
-	font-family: 'Yellowtail', cursive;
-	text-align: center;
-	}
-
+	/*text-size: 90%;*/
+	} 
 
 a:link {
 	color:#e67300;
@@ -18,33 +42,61 @@ a:hover{
 	color: hotpink;
 	}
 a:visited {
-	color: #b3005a;
+	color: #e67300;
 }
 a:active {	
 	color: #ff704d;
 }
 
+#images {
+	/*border-radius: 20px;
+	box-shadow: rgba(0,0,0,0.2) 0px 2px 3px, inset rgba(0,0,0,0.2) 0px -1px 2px; 
+	border:10px solid #13001a; */
+	background-size: cover; 
+	background-position: center; 
+	background-repeat:no-repeat;
+ }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+    color:white;
+    background-color:#b3005a;
+    }
+.nav-pills > li  > a:hover {
+	color:#b3005a !important;
+}
+
+.nav-pills > li.active  > a:hover {
+	color:white !important;
+	background-color:#b3005a !important;
+}
+
+#kalendar {
+	color: white;
+	background-color: #b3005a;
+	font-family: 'Raleway', sans-serif;
+}
 
 #btn-custom {
-  background-color: hsl(0, 0%, 22%) !important;
+ background-color: hsl(330, 100%, 19%) !important;
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2b2b2", endColorstr="#383838");
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#b2b2b2), to(#383838));
-  background-image: -moz-linear-gradient(top, #b2b2b2, #383838);
-  background-image: -ms-linear-gradient(top, #b2b2b2, #383838);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b2b2b2), color-stop(100%, #383838));
-  background-image: -webkit-linear-gradient(top, #b2b2b2, #383838);
-  background-image: -o-linear-gradient(top, #b2b2b2, #383838);
-  background-image: linear-gradient(#b2b2b2, #383838);
-  border-color: #383838 #383838 hsl(0, 0%, 10%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0f87", endColorstr="#600030");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ff0f87), to(#600030));
+  background-image: -moz-linear-gradient(top, #ff0f87, #600030);
+  background-image: -ms-linear-gradient(top, #ff0f87, #600030);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff0f87), color-stop(100%, #600030));
+  background-image: -webkit-linear-gradient(top, #ff0f87, #600030);
+  background-image: -o-linear-gradient(top, #ff0f87, #600030);
+  background-image: linear-gradient(#ff0f87, #600030);
+  border-color: #600030 #600030 hsl(330, 100%, 10.5%);
   color: #fff !important;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.79);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.56);
   -webkit-font-smoothing: antialiased;
 }
 
+
 #faQuestion {
+	font-size: 200%
 	color: white;
-	font-size: 200%;
 	font-family: 'Philosopher', sans-serif;
 	font-style: italic;
 }
@@ -52,6 +104,13 @@ a:active {
 #regPara {
 	color: white;
 	font-family: 'Philosopher', sans-serif;	
+}
+
+#regParaAbout {
+	color: white;
+	font-family: 'Philosopher', sans-serif;	
+	text-align: left;
+	margin:1px 1px 50px 1px;
 }
 
 #tabbedPara {
@@ -74,11 +133,35 @@ a:active {
     background: rgba(0, 0, 0, 0.8);
 }
 
+#imgJumbo {
+	background: -webkit-linear-gradient(left, rgba(222,128,255,0.4), rgba(38, 0, 51, 0.8)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(222,128,255,0.2), rgba(38, 0, 51, 0.8)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(222,128,255,0.2), rgba(38, 0, 51, 0.8)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(222,128,255,0.2), rgba(38, 0, 51, 0.8)); /* Standard syntax (must be last) */
+	box-shadow: 10px 20px 20px 10px black;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center; 
+}
+
+#aboutUsJumbo {
+	 /* IE8 and below */
+    background: rgb(0, 0, 0);
+    /* all other browsers */
+    background: rgba(0, 0, 0, 0.2);
+}
+.jumbotron {
+  box-shadow: 10px 0 20px 10px black;
+  opacity: 0.99;
+  filter: alpha(opacity=99);
+  z-index: 99;
+}
+
 h1 {
-  font-size: 700%;
+  font-size: 600%;
   text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
-  text-align: center;
-  margin: 0;
+  font-family: 'Yellowtail', cursive;
+  color: white;
 }
 
 .col-centered {
@@ -86,30 +169,16 @@ h1 {
   float: none;
   margin-right: -4px;
 }
-section {
-  width: 100vw;
-  padding-left: 20%;
-  padding-top: 40px;
-}
 
 body {
   background: url("http://www.publicdomainpictures.net/pictures/30000/velka/christmas-light-rainbow.jpg") no-repeat center center fixed;
-  border-color: black;
-  border-width: 5px;
-  border-style: solid;
   height: auto;
-  font-family: 'Yellowtail', cursive; 
+   font-family: 'Philosopher', sans-serif;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-.jumbotron {
-  box-shadow: 10px 0 20px 10px black;
-  opacity: 0.99;
-  filter: alpha(opacity=99);
-  z-index: 99;
+  font-family: 'Raleway', sans-serif;
 }
 
 .center-wrap {
@@ -145,3 +214,4 @@ body {
   border-width: 5px;
   border-style: solid;
 }
+
